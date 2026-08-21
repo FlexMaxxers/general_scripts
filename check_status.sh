@@ -12,3 +12,7 @@ echo ""
 echo "Checking for Kuiper_dram test"
 echo "-----------------------------"
 sudo lsof /dev/vfio/2
+
+echo -e "\nChecking Bootloader method. If it is blank, we are local."
+echo "---------------"
+printenv | grep SECURE
