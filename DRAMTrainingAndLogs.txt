@@ -1,0 +1,6 @@
+Manually run KBS DRAM Training for YRIS-X2_WC1:
+/opt/waymo/kuiper_dram_test --pci_device "0000:04:00.0" --legacy_byte_swizzle=false --mem_clk=2133 --ddr_ecc=rade8 --dram_device_size_MB=2048 
+
+
+Check KBS Logs to see if DRAM trainning passed/failed
+sudo less /opt/waymo/kuiper_dram_test.log
