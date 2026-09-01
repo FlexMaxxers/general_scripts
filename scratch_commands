@@ -1,0 +1,1 @@
+cd ~/rranganathan_tmp/; sudo ./ledfix_tla_functional_tester.par --config-file=/var/run/testers/ybr3_tla_functional/debug/791247f39fd4a1f4e241ee9cb27dd4d5422b4c51.yaml --env=DEBUG --config-value=use_conveyance_plc=False
