@@ -1,1 +1,6 @@
+# TLA FT
 cd ~/rranganathan_tmp/; sudo ./ledfix_tla_functional_tester.par --config-file=/var/run/testers/ybr3_tla_functional/debug/791247f39fd4a1f4e241ee9cb27dd4d5422b4c51.yaml --env=DEBUG --config-value=use_conveyance_plc=False
+
+
+# Burn In
+cd ~/rranganathan+tmp; ./extended_temp_cycle_burn_in_supervisor_tester.par  --config-file=/var/run/testers/ybr3_burn_in_supervisor_tester/debug/f5796a30c7386cb7f1886b577f22568589015b30.yaml --env=DEV
