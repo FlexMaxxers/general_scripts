@@ -1,0 +1,17 @@
+station1.yrisx: 172.27.199.88 [remote][done]
+station1.ost: 172.27.199.29 [remote][done]
+station2.ost: 172.27.199.98 [local machine]
+station1.rollcorrection: 172.27.199.3 [remote][done]
+station4.balancecheck: 172.27.199.116 (this station is primarily used for pre_balance on ybr3 line)
+station3.balancecheck: 172.27.199.107 (this station is primarily used for post_balance on ybr3 line)
+station1.tlafunctional: 172.27.199.2 [remote][done]
+station3.tft-gui: 172.27.199.35 (TFT 4-UP #2) [remote][done]
+station1.tft-gui: 172.27.199.101 (TFT 4-UP #1) [remote][done]
+station1.burnin: 172.27.199.86 (TFT 1-UP) [remote][done]
+
+
+
+New stations (might need to be ssh'd from the same network pool):
+station2.ybr3_tla_functional: 10.0.0.178 (ethMGMT) 99.124.207.116 (public ip address)
+station2.tft-gui: 10.0.0.22 (ethMGMT) (TFT 12-UP)
+station2.yrix: 10.0.0.46
