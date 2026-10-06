@@ -7,7 +7,8 @@ while true; do
         [Yy]* ) 
         	echo "Enabling local bootloader"
 
-        	sudo rm /etc/profile.d/90-remote_bootloader.sh    
+        	sudo rm /etc/profile.d/90-remote_bootloader.sh
+
 			sudo rm /etc/supervisor/waymo_env/remote_bootloader.conf
 
             echo "Local bootloader has been enabled. Please run 'printenv | grep SECURE' to confirm after reboot."
