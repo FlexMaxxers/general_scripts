@@ -11,7 +11,7 @@ fi
 
 RUNS="$1"
 
-echo "Starting $LOOPs iterations for $ENV
+echo "Starting $LOOPs iterations for $ENV"
 
 for ((i=1; i<=RUNS; i++))
 do
