@@ -20,7 +20,7 @@ do
     --operator=mirandaricardo_automated \
     --config-value=start_test_no_wait=True \
     --config-file=$CONFIG_FILE \
-    -env=$ENV
+    --env=$ENV
 done
 
 echo "Loop for $ENV complete."
