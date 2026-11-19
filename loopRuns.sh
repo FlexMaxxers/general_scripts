@@ -1,7 +1,8 @@
 #!/bin/bash
-TESTER=$(ps aux | grep DEBUG | awk -F'--config-file=' '{print $1}' | sed -n 's#.* \(/software/.*\.par\).*#\1#p')
-CONFIG_FILE=$(ps aux | grep DEBUG | awk -F'--config-file=' '{print $2}' | awk -F'--env' '{print $1}')
 ENV="DEBUG"
+TESTER=$(ps aux | grep "$ENV" | awk -F'--config-file=' '{print $1}' | sed -n 's#.* \(/software/.*\.par\).*#\1#p')
+CONFIG_FILE=$(ps aux | grep "$ENV" | awk -F'--config-file=' '{print $2}' | awk -F'--env' '{print $1}')
+
 
 
 if [ -z "$1" ]; then
