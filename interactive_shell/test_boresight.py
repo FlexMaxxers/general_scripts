@@ -3,6 +3,7 @@
 # with exec(open("test_boresight.py").read())
 
 # 1. Nothing may touch the head (station3: check by eye, there's no workcell control)
+print("Disengaging screwdriver, fpa, and DUT rotators.")
 fixture.disengage_screwdrivers()
 fixture.disengage_fpa_rotator()
 fixture.disengage_dut_rotator()
@@ -15,3 +16,8 @@ fixture.disengage_dut_rotator()
 # Run the following command manually:
 
 # fixture.rotate_dut(8) # repeat; each +8° moves the spot ~720 px down
+
+print("Engaging DUT rotator.")
+fixture.engage_dut_rotator() # grips and brakes the DUT
+print("Firing Laser.")
+rig.fire() # channel 50, 200 Hz, DSR off
