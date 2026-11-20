@@ -1,6 +1,6 @@
 # To be used inside reg_shell/interactive_shell
 # with exec(open("power_on.py").read())
-
+cd ~/mirandaricardo/interactive_shell
 # --- station1 ---
 !ping -c1 -W1 192.168.1.110
 rig = get_boresight_rig(ybr_power_supply_ip='192.168.1.110',
